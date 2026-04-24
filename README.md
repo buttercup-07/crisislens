@@ -8,7 +8,7 @@ A unified platform that connects **NGOs**, **Donors (Users)**, and **Government 
 
 ## 🚀 Overview
 
-This platform leverages **real-time disaster intelligence**, **machine learning**, and **secure financial infrastructure** to:
+This platform leverages **real-time disaster intelligence**, **machine learning**, and **transparent fund tracking** to:
 - Detect and analyze crises automatically
 - Identify NGOs that need funds the most
 - Enable direct, transparent donations
@@ -28,7 +28,7 @@ Our goal is to **bridge the gap between crisis detection, resource allocation, a
   - Urgency level
   - AI-generated reasoning & explanations
   - Geographical coordinates (latitude & longitude)
-- Uses **Hugging Face Transformers** and **Gemini API** for enhanced NLP understanding
+- Uses **Hugging Face Transformers** and **Kimi (Moonshot AI)** for enhanced NLP understanding
 
 ✅ Output is structured, explainable, and location-aware
 
@@ -42,8 +42,7 @@ Our goal is to **bridge the gap between crisis detection, resource allocation, a
 - NGOs are **ranked based on urgency and need**
 - Donors can:
   - View AI-recommended NGOs
-  - Donate directly using **Razorpay payment gateway**
-  - Ensure funds reach the most impacted organizations
+  - Track donation impact through verified reports
 
 💡 Data-driven donations instead of guesswork
 
@@ -65,23 +64,24 @@ Our goal is to **bridge the gap between crisis detection, resource allocation, a
 
 ## 🏗️ System Architecture (High Level)
 
-News Sources → Web Scraper → ML & NLP Pipeline (FastAPI) → Crisis Scoring & Geo-tagging → NGO Ranking Engine → Web Platform (MERN) → Donations & Reports
+```
+News Sources → Web Scraper → ML & NLP Pipeline (FastAPI) → Crisis Scoring & Geo-tagging → NGO Ranking Engine → Web Platform → Donations & Reports
+```
 
 ---
 
 ## 🛠️ Tech Stack
 
 ### 🌐 Web Platform
-- **MongoDB** – Database
+- **MongoDB** – Database (local instance)
 - **Express.js** – Backend API
-- **React.js** – Frontend
+- **Vanilla JS** – Frontend
 - **Node.js** – Server runtime
-- **Razorpay** – Payment gateway
 
 ### 🤖 AI / ML Stack
 - **FastAPI** – ML service APIs
 - **Hugging Face Transformers** – NLP & classification
-- **Gemini API** – Advanced reasoning & explanation
+- **Kimi (Moonshot AI)** – Advanced reasoning & explanation
 - **NumPy & Pandas** – Data processing
 - **Python** – ML pipeline implementation
 
@@ -92,7 +92,7 @@ News Sources → Web Scraper → ML & NLP Pipeline (FastAPI) → Crisis Scoring 
 - AI-driven decision making
 - Explainable ML outputs
 - NGO performance scoring
-- Secure and verified donations
+- Donation tracking & transparency
 - NGO transparency through AI
 - Scalable microservice-based architecture
 

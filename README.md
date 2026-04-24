@@ -2,7 +2,7 @@
 
 A unified platform that connects **NGOs**, **Donors (Users)**, and **Government Bodies** to enable **transparent, data-driven, and urgent humanitarian response** using **Artificial Intelligence**.
 
-> **Theme:** AI for Social and Economic Good
+
 
 ---
 
